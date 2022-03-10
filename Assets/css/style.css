@@ -11,12 +11,19 @@ header>div>nav {
     padding: 0;
 }
 
-nav>div>a:hover {
-    color: #98a5a5;
+.menu:hover {
+   color: #98a5a5 !important;
+}
+.menu i:hover{
+    color: #98a5a5 !important;
 }
 
 nav>div>p>img {
     padding-right: 15%;
+}
+.btn.btn-outline-light:hover{
+    color: #98a5a5  !important;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .footer1 {
@@ -29,6 +36,14 @@ nav>div>p>img {
 
 footer>div>div>div>a {
     padding: 0 1%;
+}
+
+.email:hover{
+    text-decoration: underline !important;
+}
+
+.learn_more:hover{
+    text-decoration: underline !important;
 }
 
 .footer2 {
