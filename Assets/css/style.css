@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d35649;
+}
+
+header>div>nav {
+    padding: 0;
+}
+
+nav>div>a:hover {
+    color: #98a5a5;
+}
+
+nav>div>p>img {
+    padding-right: 15%;
+}
+
+.footer1 {
+    background-color: #1f1f1f;
+    width: 100%;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer>div>div>div>a {
+    padding: 0 1%;
+}
+
+.footer2 {
+    background-color: #444;
+}
