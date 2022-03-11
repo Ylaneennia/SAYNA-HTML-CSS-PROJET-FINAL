@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between d-block-md">
                 <nav style="padding-top: 2%;" class="row col justify-content-start d-flex ">
                     <div class="d-flex align-items-center">
                         <p><img src="./Assets/Images/group-2.png" alt="logo" width="50vh"></p><a style="color: white; font-size: larger; padding-bottom: 1%;" class="text-decoration-none" href="Index.html">[Events]</a>
@@ -24,16 +24,16 @@
                 </nav>
                 <nav class="row col justify-content-end align-items-center" style="margin: 0;">
                     <div class="col-2 d-flex justify-content-center">
-                        <a class="menu" href="Search.html" style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none;"><i style="color: white; padding-right: 20%;" class="fa-solid fa-magnifying-glass"></i>Search</a>
+                        <i style="color: white; padding-right: 20%;" class="fa-solid fa-magnifying-glass"></i><a class="menu d-none d-md-block" href="Search.html" style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none;">Search</a>
                     </div>
                     <div class="col-2 d-flex justify-content-center">
-                        <a class="menu" href="About.html" style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none;"><i style="color: white; padding-right: 20%;" class="fa-regular fa-user"></i>About</a>
+                        <i style="color: white; padding-right: 20%;" class="fa-regular fa-user"></i><a class="menu d-none d-md-block" href="About.html" style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none;">About</a>
                     </div>
-                    <div class="col-2 row d-flex justify-content-center">
-                        <a class="menu" href="#" style="display: flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none; "><i style="color: white; padding-right: 20%; " class="fa-solid fa-rss "></i>Blog</a>
+                    <div class="col-2 d-flex justify-content-center">
+                        <i style="color: white; padding-right: 20%; " class="fa-solid fa-rss "></i><a class="menu d-none d-md-block" href="#" style="display: flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none; ">Blog</a>
                     </div>
                     <div class="col-2 d-flex justify-content-center ">
-                        <a class="menu" href="# " style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none; "><i style="color: white; padding-right: 20%; " class="fa-solid fa-bars "></i>More</a>
+                        <i style="color: white; padding-right: 20%; " class="fa-solid fa-bars "></i><a class="menu d-none d-md-block" href="# " style="display:flex; justify-content: center; align-items: baseline; color: white; font-size: small; text-decoration: none; ">More</a>
                     </div>
                 </nav>
             </div>
@@ -41,53 +41,61 @@
     </header>
     <main>
         <div class="container-fluid" style="padding: 0;">
-            <div style="text-align:center; background-color: #eee; margin-top: 4%; padding: 2% 0;">
-                <h1 style="color: #98a5a5;">Filter by location, host, subject, date, daytime:</h1>
-                <div class="row">
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="location" style="font-weight: bold;">Location</label>
-                            <input style="width: 20vh; height: 5vh;" type="text" name="location" id="location">
-                        </p>
+            <div class="form-search" style="background-color: #eee; margin-top: 4%; padding: 2% 0;">
+                <h1 style="color: #98a5a5; text-align: center;">Filter by location, host, subject, date, daytime:</h1>
+                <div class="row align-items-center" style="padding: 2% 6%; width:100%">
+                    <form class="col-10 col-md row" method="post" style="display: block; margin:0; font-size: small;">
+                        <label class="row" for="location" style="font-weight: bold;">Location</label>
+                        <input class="row" style="margin:0; width: 16vh; height: 5vh;" type="text" name="location" id="location">
                     </form>
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="host" style="font-weight: bold;">Host</label>
-                            <input style="width: 20vh; height: 5vh;" type="text" name="Host" id="Host">
-                        </p>
+                    <form class="col-10 col-md" method="post" style="display: block; font-size: small; padding: 0 2%;">
+                        <label class="row" for="host" style="font-weight: bold;">Host</label>
+                        <input class="row" style="width: 16vh; height: 5vh;" type="text" name="Host" id="Host">
                     </form>
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="Subject" style="font-weight: bold;">Subject</label>
-                            <input style="width: 20vh; height: 5vh;" type="Subject" name="Initial Date" id="Subject">
-                        </p>
+                    <form class="col-7 col-md" method="post" style="display: block; font-size: small; padding: 0 2%;">
+                        <label class="row" for="Subject" style="font-weight: bold;">Subject</label>
+                        <input class="row" style="width: 16vh; height: 5vh;" type="Subject" name="Initial Date" id="Subject">
                     </form>
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="location" style="font-weight: bold;">Initial Date</label>
-                            <input style="width: 20vh; height: 5vh;" type="date" name="Initial Date" id="Initial Date">
-                        </p>
+                    <form class="col-3 col-md" method="post" style="display: block; font-size: small; padding: 0 2%;">
+                        <label class="row" for="location" style="font-weight: bold; text-align: left;">Initial Date</label>
+                        <input class="row" style="width: 20vh; height: 5vh;" type="date" name="Initial Date" id="Initial Date">
                     </form>
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="location" style="font-weight: bold;">Final Date</label>
-                            <input style="width: 20vh; height: 5vh;" type="date" name="Final Date" id="Final Date">
-                        </p>
+                    <form class="col" method="post" style="display: block; font-size: small; padding: 0 2%;">
+                        <label class="row" for="location" style="font-weight: bold;">Final Date</label>
+                        <input class="row" style="width: 20vh; height: 5vh;" type="date" name="Final Date" id="Final Date">
                     </form>
-                    <form class="col" method="post" style="display: block;">
-                        <p>
-                            <label for="location" style="font-weight: bold;">Daytime</label>
-                            <input style="width: 20vh; height: 5vh;" type="datetime" name="Daytime" id="Daytime">
-                        </p>
+                    <form class="col" method="post" style="display: block; font-size: small; padding: 0 2%;">
+                        <label class="row" for="location" style="font-weight: bold;">Daytime</label>
+                        <select class="row" name="list" id="list" style="width: 16vh; height: 5vh; border: 1px solid">
+                            <option value="list">choose...</option>
+                        </select>
                     </form>
+                    <a class="col-1 btn btn-primary justify-content-center align-items-center" href="Search.html" role="button" style="color: white; width: 10vh; height: 6vh; font-size: small;">Search</a>
+                    <input class="col-1 btn btn-primary justify-content-center align-items-center" type="reset" value="Clear Filter" style="color: white; font-size: small; background-color: hsl(49, 100%, 50%); border: hsl(49, 100%, 50%); width: 25vh; height: 6vh;"></a>
                 </div>
             </div>
-
+            <div class="img-search" style="padding: 3% 0;">
+                <h2 style="color: #98a5a5; text-align: center;">Search Result Found 7 [Events Nearby.]</h2>
+                <div class="row justify-content-center d-block d-md-flex" style="padding: 2% 10%; width:100%;">
+                    <figure class="col-4">
+                        <a href="About.html"><img style="background-color: #d35649;" width="100%" src="./Assets/Images/group-2.png"></a>
+                        <figcaption style="color: white; font-weight: bold; font-size: larger;">go to [gathering] example</figcaption>
+                    </figure>
+                    <figure class="col-4">
+                        <a href="About.html"><img style="background-color: #d35649;" width="100%"  src="./Assets/Images/group-2.png"></a>
+                        <figcaption style="color: white; font-weight: bold; font-size: larger;">go to [gathering] example</figcaption>
+                    </figure>
+                    <figure class="col-4">
+                        <a href="About.html"><img style="background-color: #d35649;" width="100%" style src="./Assets/Images/group-2.png"></a>
+                        <figcaption style="color: white; font-weight: bold; font-size: larger;">go to [gathering] example</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <div style="padding: 0; " class="container-fluid ">
-            <div class="footer1 ">
+            <div class="footer1 d-none d-md-block">
                 <div style="padding: 5%; " class="d-flex align-items-center justify-content-center ">
                     <button style="border-left: none; border-right: none; border-radius: 0%; " type="button " class="btn btn-outline-light "><a href="Index.html" style="color: white; font-size: x-small; font-weight: bold; text-decoration: none; ">HOME</a></button>
                     <button style="border-left: none; border-right: none; border-radius: 0%; " type="button " class="btn btn-outline-light "><a href="Search.html" style="color: white; font-size: x-small; font-weight: bold; text-decoration: none; ">SEARCH</a></button>
@@ -126,14 +134,18 @@
             </div>
             <div class="footer2">
                 <div class="row" style="width: 100%;">
-                    <div class="row col-6">
-
+                    <div class="row col-6 " style="padding: 1% 1%; width:50%;">
+                        <div class="col" style="text-align: center;"><i style="color: white" class="fa-brands fa-facebook-square"></i></div>
+                        <div class="col" style="text-align: center;"><i style="color: white" class="fa-brands fa-twitter"></i></div>
+                        <div class="col" style="text-align: center;"><i style="color: white" class="fa-brands fa-instagram"></i></div>
+                        <div class="col" style="text-align: center;"><i style="color: white" class="fa-brands fa-tumblr"></i></div>
+                        <div class="col" style="text-align: center;"><i style="color: white" class="fa-brands fa-linkedin"></i></div>
                     </div>
-                    <div class="row col-6" style="padding: 1% 0;">
+                    <div class="row col-6" style="padding: 1% 0; width:50%;">
                         <p style="text-align: right;color: white; font-size: small; padding: 0;">©2020 [Events], Inc. All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-</body>""
+</body>
