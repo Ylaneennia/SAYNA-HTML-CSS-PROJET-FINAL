@@ -75,6 +75,10 @@ figcaption{
     left: 20%
 }
 
+.d-grid.gap-2.d-md-flex.justify-content-md-end>.btn.btn-primary:hover{
+    background-color: blue;
+}
+
 /**media queries**/
 @media screen  and (max-device-width: 768px) {
     header>div>.row.justify-content-between.d-block-md{
