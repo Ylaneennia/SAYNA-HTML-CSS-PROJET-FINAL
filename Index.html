@@ -39,9 +39,79 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="container-fluid" style="text-align: center; height: 50vh; overflow: hidden; background-image: url(./Assets/Images/group-1.jpg);background-position:center;background-size: cover; background-repeat: no-repeat; margin: 0; width: 100%;">
+            <h3 style="color: white;text-shadow: 1px 1px black; padding-top: 3%;">[EVENTS]... YOUR GATEWAY TO CONNECT WITH EVENTS AROUND YOUR AREA</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.719); padding: 2% 0; margin: 2% 15%; border-radius: 5px;">
+                <h6>SEARCH EVENTS NEARBY</h6>
+                <form class="row justify-content-center d-block d-md-flex" method="post" action="Search.html" style="padding-top: 2%;">
+                    <input class="col-auto col-md-9" type="text" name="search" id="search" placeholder="Insert your location here" style="font-size: small;"/>
+                    <div class="col-5 col-md-auto d-grid gap-2 container-fluid " style="margin: 0; padding: 0;">
+                        <button class="btn btn-primary" type="button" style="background-color: #d35649; border: #d35649; color: white; font-weight: bold; font-size: small;">SEARCH</button>
+                    </div>
+                </form>
+            </div>
+            <a href="#" style=" text-decoration: none; color:black; background-color: rgba(255, 255, 255, 0.719); font-weight: bold; border-radius: 5px; padding: 1% 0;">How it works</a>
+        </section>
+        <section class="container-fluid d-none d-md-block" style="text-align: center;">
+            <h4 style="color: #d35649; padding: 2% 0;">[Events] works in four simple steps</h4>
+            <div style="padding-top: 2%;">
+                <div class="row">
+                    <div class="col-6">
+                        <i class="fa-solid fa-magnifying-glass-location"></i> 
+                        <p style="font-weight: bold;">1-Locate:</p>
+                        <p style="font-size: small;">It's simple, on [Events] homepage, enter the name of the location you want to spend some good quality time with people and click on search.</p>
+                    </div>
+                    <div class="col-6">
+                        <i class="fa-solid fa-check-double"></i> 
+                        <p style="font-weight: bold;">2-Confirm or Create:</p>
+                        <p style="font-size: small;">Go to check the events nearby the location you searched for and apply for any [Events] available. Every [gathering] has a subject, that you can search for too! If no [Events] are available on the location you selected, you can create and share your event.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 2%;">
+                <div class="row">
+                    <div class="col-6">
+                        <i class="fa-solid fa-map-location-dot"></i> 
+                        <p style="font-weight: bold;">3-Go!</p>
+                        <p style="font-size: small;">Select the [Events], wait for the scheduled day and go! Be prepared to meet new people, create new connections and have a great time!</p>
+                    </div>
+                    <div class="col-6">
+                        <i class="fa-solid fa-users"></i> 
+                        <p style="font-weight: bold;">4-Have a good time:</p>
+                        <p style="font-size: small;">Once you are at the [Events] location, look for the host, enjoy and have fun!</p>
+                    </div>
+                </div>
+            </div>
+        </section >
+        <section class="container-fluid" style="padding: 3%; background-color: #d35649;">
+            <div class="back" style="background: url(./Assets/Images/group-2.jpg); border-radius: 10px; background-position: right center; background-repeat: no-repeat; background-size: 20%;height: 40vh; padding: 3% 2%; color: white; ">
+                <div class="back2" style="display:flex; flex-direction: column-reverse; justify-content: start;">
+                    <p style="padding: 2% 0;">Every month a new you might find [Events] near you and enjoy the company with people whom you can share mutual interests</p>
+                    <h5>[Events] near you</h5>
+                </div>
+                <a class="link1" href="Search.html" style="text-decoration: none; color: #d35649; background-color: white; padding: 1%;">Find a [Events]</a>
+            </div>
+        </section>
+        <section class="container-fluid" style="padding: 3%; background-color: #98a5a5;;">
+            <div class="back" style=" background-image: url(./Assets/Images/group-4.jpg);   height: 40vh; padding: 3% 2%; color: white; background-position: center right; background-repeat: no-repeat; background-size: 20%;">
+                <div class="back2" style="display: flex;flex-direction: column-reverse; justify-content: start;">
+                    <p style="padding: 2% 0;">You can create [Events] events around your area and share them with people you know and with whoever wants to connect</p>
+                    <h5>[Events] connecting you</h5>
+                </div>
+                <a class="link2" href="Search.html"  style="padding: 1%;text-decoration: none; color: #98a5a5; background-color: white;">Learn more about [Events]</a>
+            </div>
+        </section>
+        <section class="container-fluid" style="padding: 3%; background-color: #509bd7;">
+            <div class="back" style="display: flex;flex-direction: column-reverse; justify-content: start; background-image: url(./Assets/Images/group-3.jpg); height: 40vh; padding: 3% 2%; color: white; background-position: center right; background-repeat: no-repeat; background-size: 20%;">
+                <p style="padding: 2% 0;">[Events] let you meet new people, share interests and spreading love</p>
+                <h5>[Events] spreding love</h5>
+            </div>
+        </section>
+    </main>
     <footer>
         <div style="padding: 0; " class="container-fluid ">
-            <div class="footer1 ">
+            <div class="footer1 d-none d-md-block">
                 <div style="padding: 5%; " class="d-flex align-items-center justify-content-center ">
                     <button style="border-left: none; border-right: none; border-radius: 0%; " type="button " class="btn btn-outline-light "><a href="Index.html" style="color: white; font-size: x-small; font-weight: bold; text-decoration: none; ">HOME</a></button>
                     <button style="border-left: none; border-right: none; border-radius: 0%; " type="button " class="btn btn-outline-light "><a href="Search.html" style="color: white; font-size: x-small; font-weight: bold; text-decoration: none; ">SEARCH</a></button>
@@ -81,11 +151,11 @@
             <div class="footer2">
                 <div class="row" style="width: 100%;">
                     <div class="row col-6" style="padding: 1% 1%; width:50%;">
-                        <div class="col-1" style="text-align: center;"><i style="color: white" class="fa-brands fa-facebook-square"></i></div>
-                        <div class="col-1" style="text-align: center;"><i style="color: white" class="fa-brands fa-twitter"></i></div>
-                        <div class="col-1" style="text-align: center;"><i style="color: white" class="fa-brands fa-instagram"></i></div>
-                        <div class="col-1" style="text-align: center;"><i style="color: white" class="fa-brands fa-tumblr"></i></div>
-                        <div class="col-1" style="text-align: center;"><i style="color: white" class="fa-brands fa-linkedin"></i></div>
+                        <div class="col-auto" style="text-align: center;"><i style="color: white" class="fa-brands fa-facebook-square"></i></div>
+                        <div class="col-auto" style="text-align: center;"><i style="color: white" class="fa-brands fa-twitter"></i></div>
+                        <div class="col-auto" style="text-align: center;"><i style="color: white" class="fa-brands fa-instagram"></i></div>
+                        <div class="col-auto" style="text-align: center;"><i style="color: white" class="fa-brands fa-tumblr"></i></div>
+                        <div class="col-auto" style="text-align: center;"><i style="color: white" class="fa-brands fa-linkedin"></i></div>
                     </div>
                     <div class="row col-6" style="padding: 1% 0; width:50%;">
                         <p style="text-align: right;color: white; font-size: small; padding: 0;">©2020 [Events], Inc. All rights reserved</p>
