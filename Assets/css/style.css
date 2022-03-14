@@ -45,7 +45,7 @@ footer>div>div>div>a {
     padding:0%;
 }
 div.col i.fa-brands:hover{
-    color: #575a89;
+    color: ##509bd7;
 }
 
 .email:hover{
@@ -63,7 +63,7 @@ div.col i.fa-brands:hover{
     cursor: pointer;
 }
 .footer2>div>div>div>i:hover{
-    color: #575a89 !important;
+    color: ##509bd7 !important;
 }
 div>figure{
     position: relative;
