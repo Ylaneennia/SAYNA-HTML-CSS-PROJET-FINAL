@@ -78,6 +78,9 @@ figcaption{
 .d-grid.gap-2.d-md-flex.justify-content-md-end>.btn.btn-primary:hover{
     background-color: blue;
 }
+.click:hover {
+    text-decoration: underline !important;
+}
 
 /**media queries**/
 @media screen  and (max-device-width: 768px) {
@@ -102,6 +105,39 @@ figcaption{
         font-size: small !important;
         left: 5%
     }
-
+    input#location.row {
+        width: 30vh !important;
+    }
+    input#Host.row {
+        width: 30vh !important;
+    }
+    input#Subject.row {
+        width: 30vh !important;
+    }
+    input#InitialDate.row {
+        width: 20vh !important;
+    }
+    input#FinalDate.row {
+        width: 15vh !important;
+    }
+    select#list.row {
+        width: 10vh !important;
+    }
+    .back {
+        background-size: cover !important;
+        border-radius: 10px !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .back2 {
+        flex-direction: column !important;
+    }
+    .link1 {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+    .link2 {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+}
     
 }
